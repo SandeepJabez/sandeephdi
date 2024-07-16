@@ -12,5 +12,8 @@
 \item{...}{Additional arguments passed to the print method.}
 }
 \description{
-This function defines how objects of class `hdro_data` are printed.
+This function defines how objects of class `hdro_data` are printed
+}
+\details{
+Task 3 of the HDI project
 }

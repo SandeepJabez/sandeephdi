@@ -2,7 +2,7 @@
 % Please edit documentation in R/hdro_data.R
 \name{create_hdro_data}
 \alias{create_hdro_data}
-\title{Constructor for HDRO Data Class}
+\title{Constructor for HDI Data Class}
 \usage{
 create_hdro_data(data)
 }

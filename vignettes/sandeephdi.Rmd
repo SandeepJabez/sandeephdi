@@ -1,0 +1,83 @@
+---
+title: "sandeephdi"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{sandeephdi}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+# Introduction
+This package has been created to load the data from the Human Development Index (HDI) dataset of any country. 
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Loading the package
+```{r setup}
+library(sandeephdi)
+```
+
+## Loading the data
+```{r warning=FALSE, message=FALSE}
+# we will load india and pakistan data
+#df <- read_hdro_file("D:/1 UCD/3rd Semester/Advance Prog R/Assignment 1/hdro_indicators_pak.csv")
+path1<-"D:/1 UCD/3rd Semester/Advance Prog R/Assignment 1/hdro_indicators_pak.csv"
+path2<-"D:/1 UCD/3rd Semester/Advance Prog R/Assignment 1/hdro_indicators_ind.csv"
+df_ind <- read_hdro_file(path2)
+df_pak <- read_hdro_file(path1)
+
+```
+
+## Printing the data
+```{r}
+# first we will print the data of india
+
+head(df_ind)
+cat("\n")
+# now we will use the print 
+print(df_ind)
+
+```
+```{r}
+# similarly printing the data of pakistan
+head(df_pak)
+cat("\n")
+print(df_pak)
+
+```
+
+## Summary of the data
+
+```{r}
+# summary of the data of india
+cat("Summary of India using summary function\n")
+summary(df_ind)
+cat("\n")
+# summary of the data of pakistan
+cat("Summary of Pakistan using summary function\n")
+summary(df_pak)
+
+
+
+```
+
+## Plotting the data
+```{r}
+# plotting the data of india
+cat("Plotting the data of India\n")
+plot(df_ind, "Life Expectancy at Birth")
+plot(df_ind, "HDI")
+```
+
+```{r}
+# plotting the data of pakistan
+cat("Plotting the data of Pakistan\n")
+plot(df_ind, "Life Expectancy at Birth")
+plot(df_ind, "HDI")
+
+```
+
+
+

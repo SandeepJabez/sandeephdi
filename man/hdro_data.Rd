@@ -7,11 +7,12 @@
 hdro_data(data)
 }
 \arguments{
-\item{data}{A data frame containing HDRO indicators.}
+\item{data}{A data frame containing HDI indicators.}
 }
 \value{
 An object of class `hdro_data`.
 }
 \description{
-This function creates a new S3 class `hdro_data`.
+This function reads an HDI indicators CSV file and assigns appropriate data types to the columns
+This is Task 1 of the HDI project
 }

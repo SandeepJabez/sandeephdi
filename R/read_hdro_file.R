@@ -1,8 +1,9 @@
 #' Constructor for HDRO Data Class
 #'
-#' This function creates a new S3 class `hdro_data`.
+#' This function reads an HDI indicators CSV file and assigns appropriate data types to the columns
+#' This is Task 1 of the HDI project
 #'
-#' @param data A data frame containing HDRO indicators.
+#' @param data A data frame containing HDI indicators.
 #' @return An object of class `hdro_data`.
 #' @export
 hdro_data <- function(data) {
@@ -10,11 +11,11 @@ hdro_data <- function(data) {
   return(data)
 }
 
-#' Read HDRO Indicator File
+#' Read HDI Indicator File
 #'
-#' This function reads an HDRO indicators CSV file and assigns appropriate data types to the columns.
+#' This function reads an HDI indicators CSV file and assigns appropriate data types to the columns.
 #'
-#' @param file_path The path to the HDRO indicators CSV file.
+#' @param file_path The path to the HDI indicators CSV file.
 #' @return An object of class `hdro_data` with correctly assigned data types and cleaned column names.
 #' @examples
 #' df <- read_hdro_file("path/to/hdro_indicators_COUNTRYNAME.csv")

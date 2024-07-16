@@ -9,7 +9,7 @@ read_hdro_file(file_path)
 read_hdro_file(file_path)
 }
 \arguments{
-\item{file_path}{The path to the HDRO indicators CSV file.}
+\item{file_path}{The path to the HDI indicators CSV file.}
 }
 \value{
 An object of class `hdro_data` with correctly assigned data types and cleaned column names.
@@ -19,7 +19,7 @@ An object of class `hdro_data` with correctly assigned data types and cleaned co
 \description{
 This function reads an HDRO indicators CSV file and assigns appropriate data types to the columns.
 
-This function reads an HDRO indicators CSV file and assigns appropriate data types to the columns.
+This function reads an HDI indicators CSV file and assigns appropriate data types to the columns.
 }
 \examples{
 df <- read_hdro_file("path/to/hdro_indicators_COUNTRYNAME.csv")

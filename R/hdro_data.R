@@ -1,4 +1,4 @@
-#' Constructor for HDRO Data Class
+#' Constructor for HDI Data Class
 #'
 #' This function creates a new S3 class `hdro_data`.
 #'
